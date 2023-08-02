@@ -1,7 +1,7 @@
 import Car from '../models/schema.js';
 
 const getCars = async (_req, res) => {
-  console.log('Listing...');
+  console.log('Listing carss...');
   const cars = await Car.find();
   return res.send(cars);
 };
